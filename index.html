@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>World Clock</title>
 </head>
+
 <body>
-    <h1>World Clock</h1>
-    <select name="city-select" id="city-select">
-        <option value="">Select a City</option>
-        <option value="tucson">Tucson</option>
-        <option value="nashville">Nashville</option>
-        <option value="las vegas">Las Vegas</option>
-    </select>
-    <div class="cities">
-        <h2>Seattle</h2>
-        <div class="date">February 20th 2024</div>
-        <div class="time">10:12 am</div>
-    </div>
-    <div class="cities">
-        <h2>Houston</h2>
-        <div class="date">February 20th 2024</div>
-        <div class="time">11:12 am</div>
+    <div class="container">
+        <h1>World Clock</h1>
+        <select name="city-select" id="city-select">
+            <option value="">Select a City</option>
+            <option value="tucson">Tucson</option>
+            <option value="nashville">Nashville</option>
+            <option value="las vegas">Las Vegas</option>
+
+        </select>
+            <div class="cities">
+                <h2>Seattle</h2>
+                <div class="date">February 20th 2024</div>
+            <div class="time">10:12 <small>am</small></div>
+        </div>
+            <div class="cities">
+                <h2>Houston</h2>
+                <div class="date">February 20th 2024</div>
+            <div class="time">11:12 <small>am</small></div>
+        </div>
     </div>
 
-    <footer>
-        This project was coded by Tylynn Hardy and is open source on <a href="https://github.com/tylynnhardy/world-clock-project"target="blank">GitHub</a>
-    </footer>
+</body>
+
+<footer>
+    This project was coded by <strong>Tylynn Hardy</strong> and is open source on <a
+        href="https://github.com/tylynnhardy/world-clock-project" target="blank">GitHub</a>
+</footer>
 <script src="javascript/index.js"></script>
 </body>
+
 </html>
