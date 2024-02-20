@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
-    
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+
     <title>World Clock</title>
 </head>
 
@@ -16,28 +17,30 @@
         <h1>World Clock</h1>
         <select name="city-select" id="city-select">
             <option value="">Select a City</option>
-            <option value="tucson">Tucson</option>
-            <option value="nashville">Nashville</option>
-            <option value="las vegas">Las Vegas</option>
+            <option value="America/Boise">Boise</option>
+            <option value="America/Mexico_City">Mexico City</option>
+            <option value="America/Jamaica">Jamaica</option>
 
         </select>
+        <div id="city">
             <div class="cities" id="phoenix">
-                    <h2>Phoenix</h2>
-                    <div class="date"></div>
+                <h2>Phoenix</h2>
+                <div class="date"></div>
                 <div class="time"></div>
             </div>
             <div class="cities" id="puerto-rico">
-                    <h2>Puerto Rico</h2>
-                    <div class="date"></div>
+                <h2>Puerto Rico</h2>
+                <div class="date"></div>
                 <div class="time"></div>
             </div>
-</body>
+        </div>
+    </div>
 
-<footer>
-    This project was coded by <strong>Tylynn Hardy</strong> and is open source on <a
-        href="https://github.com/tylynnhardy/world-clock-project" target="blank">GitHub</a>
-</footer>
-<script src="javascript/index.js"></script>
+    <footer>
+        This project was coded by <strong>Tylynn Hardy</strong> and is open source on <a
+            href="https://github.com/tylynnhardy/world-clock-project" target="blank">GitHub</a>
+    </footer>
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>

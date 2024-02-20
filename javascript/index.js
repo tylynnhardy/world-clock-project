@@ -23,5 +23,22 @@ function displayTime() {
     );
   }
 }
+
+function displayCity (event) {
+    let cityTimeZone = event.target.value;
+    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+    let cityTime = moment().tz(cityTimeZone);
+    let cityElement = document.querySelector("#city");
+    cityElement.innerHTML = `<div class="cities" id="phoenix">
+                <h2>${cityName}</h2>
+                <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+                <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("a")}</small>
+                </div>`;
+
+}
+
 displayTime();
 setInterval(displayTime, 1000);
+
+let citySelect = document.querySelector("#city-select");
+citySelect.addEventListener ("change", displayCity);
