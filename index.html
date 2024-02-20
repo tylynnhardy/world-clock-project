@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    
     <title>World Clock</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js">
-    </script>
 </head>
 
 <body>
@@ -21,18 +21,16 @@
             <option value="las vegas">Las Vegas</option>
 
         </select>
-            <div class="cities">
-                <h2 id="phoenix">Phoenix</h2>
-                <div class="date">February 20th 2024</div>
-            <div class="time">10:12 <small>am</small></div>
-        </div>
-            <div class="cities">
-                <h2 id="puerto-rico">Puerto Rico</h2>
-                <div class="date">February 20th 2024</div>
-            <div class="time">11:12 <small>am</small></div>
-        </div>
-    </div>
-
+            <div class="cities" id="phoenix">
+                    <h2>Phoenix</h2>
+                    <div class="date"></div>
+                <div class="time"></div>
+            </div>
+            <div class="cities" id="puerto-rico">
+                    <h2>Puerto Rico</h2>
+                    <div class="date"></div>
+                <div class="time"></div>
+            </div>
 </body>
 
 <footer>
