@@ -22,6 +22,18 @@ function displayTime() {
       "h:mm:ss [<small>]a[</small>]"
     );
   }
+
+   let belizeElement = document.querySelector("#belize");
+   if (belizeElement) {
+     let belizeDateElement = belizeElement.querySelector(".date");
+     let belizeTimeElement = belizeElement.querySelector(".time");
+     let belizeTime = moment().tz("America/Belize");
+
+     belizeDateElement.innerHTML = belizeTime.format("MMMM	Do YYYY");
+     belizeTimeElement.innerHTML = belizeTime.format(
+       "h:mm:ss [<small>]a[</small>]"
+     );
+   }
 }
 
 function displayCity(event) {
@@ -32,7 +44,7 @@ function displayCity(event) {
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let cityElement = document.querySelector("#city");
-  cityElement.innerHTML = `<div class="cities" id="phoenix">
+  cityElement.innerHTML = `<div class="cities">
                 <h2>${cityName}</h2>
                 <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
                 <div class="time">${cityTime.format(
@@ -49,3 +61,4 @@ setInterval(displayTime, 1000);
 
 let citySelect = document.querySelector("#city-select");
 citySelect.addEventListener("change", displayCity);
+
