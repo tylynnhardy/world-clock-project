@@ -36,6 +36,10 @@ function displayCity (event) {
                 <h2>${cityName}</h2>
                 <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
                 <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("a")}</small>
+                </div>
+                </div>
+                <div>
+                <a href="index.html">Home page</a>
                 </div>`;
 
 }
